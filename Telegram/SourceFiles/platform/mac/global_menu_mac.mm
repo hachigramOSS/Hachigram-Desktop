@@ -166,7 +166,7 @@ void SendKeySequence(
 		objectForInfoDictionaryKey:@"CFBundleName"];
 	return [name isKindOfClass:[NSString class]]
 		? QString::fromNSString(name)
-		: u"Telegram"_q;
+		: u"Hachigram"_q;
 }
 
 void ForceDisabled(QAction *action, bool disabled) {
@@ -426,7 +426,7 @@ void Manager::buildAppleMenu(QMenu *main) {
 			});
 		};
 		_about = main->addAction(
-			u"About Telegram"_q,
+			u"About Hachigram"_q,
 			std::move(callback));
 		_about->setMenuRole(QAction::AboutQtRole);
 	}
@@ -660,7 +660,7 @@ void Manager::buildWindowMenu(QMenu *window) {
 	}
 	window->addSeparator();
 	_showTelegram = window->addAction(
-		u"Show Telegram"_q,
+		u"Show Hachigram"_q,
 		receiver,
 		[this] {
 			if (const auto w = resolveActiveWindow()) {
@@ -672,7 +672,7 @@ void Manager::buildWindowMenu(QMenu *window) {
 }
 
 void Manager::buildMenu() {
-	buildAppleMenu(_menuBar->addMenu(u"Telegram"_q));
+	buildAppleMenu(_menuBar->addMenu(u"Hachigram"_q));
 	_file = _menuBar->addMenu(u"File"_q);
 	buildFileMenu(_file);
 	_edit = _menuBar->addMenu(u"Edit"_q);

@@ -1,11 +1,11 @@
 [Desktop Entry]
-Name=Telegram
+Name=Hachigram
 Comment=New era of messaging
-TryExec=Telegram
-Exec=Telegram -- %U
-Icon=org.telegram.desktop
+TryExec=Hachigram
+Exec=Hachigram -- %U
+Icon=com.the306bobby.hachigram.desktop
 Terminal=false
-StartupWMClass=TelegramDesktop
+StartupWMClass=Hachigram
 Type=Application
 Categories=Chat;Network;InstantMessaging;Qt;
 MimeType=x-scheme-handler/tg;x-scheme-handler/tonsite;x-scheme-handler/ton;
@@ -17,6 +17,6 @@ X-GNOME-UsesNotifications=true
 X-GNOME-SingleWindow=true
 
 [Desktop Action quit]
-Exec=Telegram -quit
-Name=Quit Telegram
+Exec=Hachigram -quit
+Name=Quit Hachigram
 Icon=application-exit
