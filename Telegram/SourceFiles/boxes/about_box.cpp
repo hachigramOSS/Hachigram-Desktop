@@ -175,6 +175,7 @@ namespace {
 		&& Core::CanaryCommitHash[0] != '\0') {
 		result += u" \u00B7 "_q + QLatin1String(Core::CanaryCommitHash);
 	}
+	result += u" \u00B7 Hachigram "_q + QLatin1String(HachigramVersionStr);
 	return result;
 }
 

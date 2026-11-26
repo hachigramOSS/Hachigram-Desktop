@@ -100,7 +100,7 @@ using namespace details;
 			? u" Snap"_q
 			: QString();
 #endif // OS_MAC_STORE || OS_WIN_STORE
-	})();
+	})() + u" Hachigram "_q + QLatin1String(HachigramVersionStr);
 }
 
 void WrapInvokeAfter(

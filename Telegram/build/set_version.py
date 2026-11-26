@@ -127,7 +127,7 @@ print('Patching core/version.h...')
 replaceInFile(scriptPath + '/../SourceFiles/core/version.h', [
   [ r'(TDESKTOP_REQUESTED_ALPHA_VERSION\s+)\(\d+ULL\)', r'\g<1>(' + versionFullAlpha + 'ULL)' ],
   [ r'(AppVersion\s+=\s+)\d+', r'\g<1>' + versionFull ],
-  [ r'(AppVersionStr\s+=\s+)[^;]+', r'\g<1>"' + versionStrSmall + '"' ],
+  [ r'(\bAppVersionStr\s+=\s+)[^;]+', r'\g<1>"' + versionStrSmall + '"' ],
   [ r'(AppBetaVersion\s+=\s+)[a-z]+', r'\g<1>' + ('true' if versionBeta else 'false') ],
 ])
 

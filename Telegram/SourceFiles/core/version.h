@@ -24,5 +24,6 @@ constexpr auto AppName = "Hachigram"_cs;
 constexpr auto AppFile = "Hachigram"_cs;
 constexpr auto AppVersion = 7004006;
 constexpr auto AppVersionStr = "7.4.6";
+constexpr auto HachigramVersionStr = "0.1.0";
 constexpr auto AppBetaVersion = false;
 constexpr auto AppAlphaVersion = TDESKTOP_ALPHA_VERSION;
